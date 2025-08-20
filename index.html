@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+
+    <main class="calculator-grid">
+        <div class="header">
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" class="slider"></label>
+            </div>
+        </div>
+
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand">0</div>
+        </div>
+
+        <button data-action="all-clear" class="span-two-columns">AC</button>
+        <button data-action="delete">DEL</button>
+        <button data-operator>÷</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operator>×</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operator>-</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operator>+</button>
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button data-action="equals" class="span-two-columns">=</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
